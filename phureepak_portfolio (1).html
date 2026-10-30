@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of ภูรีภาคย์ สุขอินทร์ — IT Programmer">
+  <title>ภูรีภาคย์ สุขอินทร์ — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Kanit:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f5f5f2;--paper:#fff;--ink:#171917;--muted:#737873;--line:#dedfd9;--accent:#b8f36b;--dark:#20251f;--mono:'IBM Plex Mono',monospace;--sans:'Inter','Kanit',sans-serif;--thai:'Kanit',sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:400}a{color:inherit;text-decoration:none}button{font:inherit}
+    .wrap{width:min(1160px,calc(100% - 48px));margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:500 13px var(--mono);letter-spacing:.08em}.brand span{display:inline-grid;place-items:center;width:30px;height:30px;background:var(--ink);color:var(--accent);margin-right:10px;border-radius:50%}.navlinks{display:flex;gap:30px;font:12px var(--mono);color:#555d55}.navlinks a:hover{color:#000}.nav-cta{border:1px solid var(--ink);padding:10px 15px;font:11px var(--mono);transition:.2s}.nav-cta:hover{background:var(--ink);color:white}
+    .hero{padding:100px 0 82px;display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:end}.eyebrow{font:11px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#6c746b;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:27px;height:1px;background:#737b70}.hero h1{font-size:clamp(54px,8.5vw,112px);line-height:.98;letter-spacing:-.075em;font-weight:600;margin:25px 0 22px}.hero h1 .outline{color:transparent;-webkit-text-stroke:1.4px var(--ink)}.thai-name{font:300 clamp(22px,3vw,32px) var(--thai);letter-spacing:-.02em;margin:0 0 20px}.intro{max-width:530px;font-size:15px;line-height:1.9;color:#606760}.hero-actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:16px;padding:15px 19px;font:11px var(--mono);border:1px solid var(--ink);transition:.2s}.btn.primary{background:var(--ink);color:white}.btn.primary:hover{background:#41483e}.btn.secondary:hover{background:var(--accent)}.arrow{font-size:16px}
+    .hero-side{border-left:1px solid var(--line);padding-left:34px;padding-bottom:7px}.availability{display:inline-flex;align-items:center;gap:8px;background:#e8f4dc;padding:8px 11px;font:10px var(--mono);letter-spacing:.04em}.dot{width:7px;height:7px;background:#4c9d39;border-radius:50%}.side-label{font:10px var(--mono);color:#81877f;letter-spacing:.12em;margin:38px 0 10px}.side-value{font-size:16px;line-height:1.7}.side-value small{display:block;color:var(--muted);font:11px var(--mono);margin-top:3px}.hero-index{display:flex;justify-content:space-between;margin-top:42px;padding-top:14px;border-top:1px solid var(--line);font:10px var(--mono);color:#7d837b}
+    .section{padding:86px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:42px}.kicker{font:10px var(--mono);letter-spacing:.14em;color:#858b82}.section h2{font-size:clamp(34px,5vw,56px);letter-spacing:-.06em;line-height:1;margin:13px 0 0;font-weight:500}.section-note{font:11px var(--mono);color:#777e75}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.about-copy{font-size:17px;line-height:1.9;max-width:570px}.about-copy p{margin:0 0 18px}.about-copy strong{font-weight:500}.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.fact{padding:19px 0;border-bottom:1px solid var(--line)}.fact:nth-child(odd){margin-right:20px}.fact-label{font:10px var(--mono);color:#858b82;letter-spacing:.08em;margin-bottom:8px}.fact-value{font-size:14px}
+    .project-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.project{background:var(--paper);border:1px solid var(--line);min-height:300px;display:flex;flex-direction:column;justify-content:space-between;padding:24px;position:relative;overflow:hidden}.project-visual{height:180px;background:#e9ebe5;display:grid;place-items:center;position:relative;overflow:hidden}.project-visual:before,.project-visual:after{content:"";position:absolute;border:1px solid #b8beb2;transform:rotate(-18deg)}.project-visual:before{width:230px;height:110px}.project-visual:after{width:150px;height:180px;transform:rotate(25deg)}.project:nth-child(2) .project-visual{background:#e5e8e1}.project:nth-child(3) .project-visual{background:#e9e5df}.project:nth-child(4) .project-visual{background:#e4e9e8}.visual-code{z-index:1;background:var(--dark);color:var(--accent);padding:17px 22px;font:12px/1.8 var(--mono);box-shadow:12px 12px 0 #cbd1c5}.project:nth-child(2) .visual-code{background:#f8f8f4;color:#252a24;border:1px solid #cdd2c8;box-shadow:12px 12px 0 #c5ccc0}.project:nth-child(3) .visual-code{background:#303a47;color:#d6e8ff}.project:nth-child(4) .visual-code{background:#eaf0e9;color:#334b3a;border:1px solid #bdc9bd}.project-meta{display:flex;justify-content:space-between;align-items:center;margin-top:20px}.project-title{font-size:19px;font-weight:500}.project-type{font:10px var(--mono);color:#858b82}.project-desc{font-size:12px;color:#6e756d;line-height:1.7;margin:8px 0 0}.placeholder{font:10px var(--mono);color:#777f75;margin-top:12px}
+    .skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.skill{padding:20px;border:1px solid var(--line);background:rgba(255,255,255,.45);min-height:126px}.skill-no{font:10px var(--mono);color:#90968d}.skill h3{font-size:15px;font-weight:500;margin:25px 0 7px}.skill p{font-size:11px;line-height:1.6;color:#747b72;margin:0}
+    .timeline{border-top:1px solid var(--line)}.timeline-row{display:grid;grid-template-columns:180px 1fr;gap:35px;padding:24px 0;border-bottom:1px solid var(--line)}.timeline-date{font:11px var(--mono);color:#838a81}.timeline-title{font-size:17px;font-weight:500}.timeline-desc{font-size:13px;line-height:1.8;color:#6e756d;margin-top:6px}
+    .contact{background:var(--dark);color:#f3f5ef;padding:75px 0;margin-top:20px}.contact .kicker{color:#aeb8a8}.contact h2{font-size:clamp(42px,7vw,82px);letter-spacing:-.07em;line-height:1.02;margin:18px 0 28px;font-weight:500}.contact h2 span{color:var(--accent)}.contact-row{display:flex;justify-content:space-between;align-items:end;gap:30px}.contact-copy{font-size:14px;line-height:1.8;color:#bdc5b9;max-width:430px}.contact .btn{border-color:#dce4d7;color:#fff}.contact .btn:hover{background:var(--accent);color:var(--dark);border-color:var(--accent)}.footer{background:var(--dark);color:#9ba598;padding:20px 0 28px}.footer-inner{border-top:1px solid #454d43;padding-top:18px;display:flex;justify-content:space-between;font:10px var(--mono)}
+    @media(max-width:760px){.wrap{width:min(100% - 34px,560px)}.nav{height:68px}.navlinks{display:none}.hero{grid-template-columns:1fr;gap:40px;padding:75px 0 58px}.hero-side{border-left:0;border-top:1px solid var(--line);padding:25px 0 0}.side-label{margin-top:23px}.hero-index{margin-top:25px}.section{padding:65px 0}.section-head{align-items:start;gap:15px}.section-note{max-width:110px;text-align:right;line-height:1.6}.about-grid{grid-template-columns:1fr;gap:35px}.project-grid{grid-template-columns:1fr}.project{min-height:285px}.skills-grid{grid-template-columns:1fr 1fr}.timeline-row{grid-template-columns:1fr;gap:9px}.contact-row{align-items:start;flex-direction:column}.footer-inner{gap:12px;flex-direction:column}}
+    @media(max-width:390px){.skills-grid{grid-template-columns:1fr}.hero h1{font-size:54px}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav">
+      <a class="brand" href="#top"><span>PS</span> PHUREEPHAK / PORTFOLIO</a>
+      <div class="navlinks"><a href="#about">ABOUT</a><a href="#work">PROJECTS</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a></div>
+      <a class="nav-cta" href="#contact">LET'S TALK ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">IT PROGRAMMER · PORTFOLIO 2026</div>
+        <h1>BUILDING<br><span class="outline">DIGITAL</span><br>THINGS.</h1>
+        <p class="thai-name">ภูรีภาคย์ สุขอินทร์</p>
+        <p class="intro">สวัสดีครับ ผมสนใจการพัฒนาซอฟต์แวร์และการสร้างประสบการณ์ดิจิทัลที่ใช้งานได้จริง ชอบเรียนรู้เทคโนโลยีใหม่ ๆ พร้อมพัฒนาทักษะและเติบโตไปกับทีม</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#work">EXPLORE MY WORK <span class="arrow">↗</span></a>
+          <a class="btn secondary" href="#contact">GET IN TOUCH <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <div class="availability"><span class="dot"></span> OPEN TO OPPORTUNITIES</div>
+        <div class="side-label">CURRENT FOCUS</div>
+        <div class="side-value">Software Development<br><small>Web · Application · Problem Solving</small></div>
+        <div class="side-label">BASED IN</div>
+        <div class="side-value">Thailand</div>
+        <div class="hero-index"><span>PORTFOLIO / 01</span><span>SCROLL TO EXPLORE ↓</span></div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">01 / INTRODUCTION</div><h2 id="about">ABOUT ME</h2></div><div class="section-note">A LITTLE<br>ABOUT MYSELF</div></div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>ผมชื่อ <strong>ภูรีภาคย์ สุขอินทร์</strong> ผู้ที่มีความสนใจในสายงาน IT และการเขียนโปรแกรม มุ่งมั่นที่จะนำความรู้ด้านเทคโนโลยีมาประยุกต์ใช้เพื่อแก้ไขปัญหาและพัฒนาผลงานที่มีประโยชน์</p>
+            <p>ผมให้ความสำคัญกับการเรียนรู้อย่างต่อเนื่อง การทำงานเป็นทีม และการพัฒนาตนเองผ่านโปรเจกต์จริง เป้าหมายคือการเติบโตเป็นโปรแกรมเมอร์ที่สามารถสร้างโซลูชันที่มีคุณภาพและตอบโจทย์ผู้ใช้งาน</p>
+          </div>
+          <div class="facts">
+            <div class="fact"><div class="fact-label">NAME</div><div class="fact-value">ภูรีภาคย์ สุขอินทร์</div></div>
+            <div class="fact"><div class="fact-label">ROLE</div><div class="fact-value">IT Programmer</div></div>
+            <div class="fact"><div class="fact-label">LANGUAGE</div><div class="fact-value">Thai / English</div></div>
+            <div class="fact"><div class="fact-label">CAREER GOAL</div><div class="fact-value">Software Developer</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">02 / SELECTED WORK</div><h2 id="work">PROJECTS</h2></div><div class="section-note">SELECTED<br>EXPERIMENTS</div></div>
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-visual"><div class="visual-code">const idea = "solve";<br>build(idea);<br><span style="opacity:.6">// project 01</span></div></div>
+            <div><div class="project-meta"><div class="project-title">Web Application</div><div class="project-type">01 / WEB</div></div><p class="project-desc">พื้นที่สำหรับนำเสนอโปรเจกต์เว็บไซต์ พร้อมอธิบายแนวคิด ฟังก์ชัน และเทคโนโลยีที่ใช้</p><div class="placeholder">[ เพิ่มภาพ / รายละเอียดผลงานจริง ]</div></div>
+          </article>
+          <article class="project">
+            <div class="project-visual"><div class="visual-code">function manage(){<br>&nbsp; return data;<br>}<br><span style="opacity:.6">// project 02</span></div></div>
+            <div><div class="project-meta"><div class="project-title">Management System</div><div class="project-type">02 / SYSTEM</div></div><p class="project-desc">ตัวอย่างพื้นที่แสดงระบบจัดการข้อมูล เช่น ระบบหลังบ้าน ระบบสมาชิก หรือระบบจัดเก็บข้อมูล</p><div class="placeholder">[ เพิ่มภาพ / รายละเอียดผลงานจริง ]</div></div>
+          </article>
+          <article class="project">
+            <div class="project-visual"><div class="visual-code">SELECT *<br>FROM ideas<br>WHERE status = 'ready';</div></div>
+            <div><div class="project-meta"><div class="project-title">Database Project</div><div class="project-type">03 / DATA</div></div><p class="project-desc">พื้นที่สำหรับแสดงการออกแบบฐานข้อมูล การจัดการข้อมูล และการเชื่อมต่อกับแอปพลิเคชัน</p><div class="placeholder">[ เพิ่มภาพ / รายละเอียดผลงานจริง ]</div></div>
+          </article>
+          <article class="project">
+            <div class="project-visual"><div class="visual-code">while (learning) {<br>&nbsp; improve();<br>}</div></div>
+            <div><div class="project-meta"><div class="project-title">Other Experiments</div><div class="project-type">04 / LAB</div></div><p class="project-desc">รวมแบบฝึกหัด โจทย์เขียนโปรแกรม และโปรเจกต์ทดลองเทคโนโลยีใหม่ ๆ</p><div class="placeholder">[ เพิ่มภาพ / รายละเอียดผลงานจริง ]</div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">03 / WHAT I USE</div><h2 id="skills">SKILLS</h2></div><div class="section-note">TOOLS &<br>CAPABILITIES</div></div>
+        <div class="skills-grid">
+          <div class="skill"><div class="skill-no">01 — DEVELOPMENT</div><h3>Programming</h3><p>Languages and programming fundamentals</p></div>
+          <div class="skill"><div class="skill-no">02 — FRONT END</div><h3>Web Development</h3><p>HTML · CSS · JavaScript</p></div>
+          <div class="skill"><div class="skill-no">03 — BACK END</div><h3>Backend</h3><p>Application logic and APIs</p></div>
+          <div class="skill"><div class="skill-no">04 — DATA</div><h3>Database</h3><p>Data structure and SQL fundamentals</p></div>
+          <div class="skill"><div class="skill-no">05 — WORKFLOW</div><h3>Git & GitHub</h3><p>Version control and collaboration</p></div>
+          <div class="skill"><div class="skill-no">06 — DESIGN</div><h3>UI / UX Basics</h3><p>User-focused interface thinking</p></div>
+          <div class="skill"><div class="skill-no">07 — MINDSET</div><h3>Problem Solving</h3><p>Analytical thinking and debugging</p></div>
+          <div class="skill"><div class="skill-no">08 — TEAMWORK</div><h3>Communication</h3><p>Collaboration and continuous learning</p></div>
+        </div>
+        <p class="placeholder" style="margin-top:18px">หมายเหตุ: รายการทักษะเป็นโครงเริ่มต้น ควรปรับให้ตรงกับภาษาและเครื่องมือที่ใช้งานได้จริง</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><div class="kicker">04 / BACKGROUND</div><h2>EDUCATION & EXPERIENCE</h2></div><div class="section-note">MY JOURNEY<br>SO FAR</div></div>
+        <div class="timeline">
+          <div class="timeline-row"><div class="timeline-date">EDUCATION</div><div><div class="timeline-title">Education Background</div><div class="timeline-desc">เพิ่มชื่อสถานศึกษา สาขาวิชา และปีที่สำเร็จการศึกษา</div></div></div>
+          <div class="timeline-row"><div class="timeline-date">EXPERIENCE</div><div><div class="timeline-title">Work / Internship Experience</div><div class="timeline-desc">เพิ่มประสบการณ์ทำงาน ฝึกงาน หรือกิจกรรมที่เกี่ยวข้องกับเทคโนโลยี (ถ้ามี)</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="kicker">05 / CONTACT</div>
+        <div class="contact-row">
+          <div><h2>LET'S BUILD<br><span>WHAT'S NEXT.</span></h2><p class="contact-copy">กำลังมองหาโอกาสในการเริ่มต้นหรือเติบโตในสายงาน IT Programmer หากสนใจร่วมงานหรือพูดคุยเกี่ยวกับโปรเจกต์ ติดต่อผมได้เลยครับ</p></div>
+          <a class="btn" href="mailto:your.email@example.com">EMAIL ME <span class="arrow">↗</span></a>
+        </div>
+        <p class="placeholder" style="color:#aeb8a8;margin-top:34px">อีเมล · เบอร์โทรศัพท์ · GitHub · LinkedIn — กรุณาใส่ข้อมูลติดต่อจริงก่อนเผยแพร่</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>© 2026 PHUREEPHAK SUKHIN</span><span>DESIGNED WITH INTENTION · BUILT TO GROW</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+</body>
+</html>
